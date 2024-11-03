@@ -44,7 +44,7 @@
                 <td class="align-middle">
                   <p class="mb-0" style="font-weight: 500;"> {{$y= $row->qty * $row->price}} SAR</p>      
                 </td> 
-                <td class="align-middle"> <a href="{{route('delqty',['id'=>$row->id])}}"></a> <i class="bi bi-trash-fill text-danger"></i></td>       
+                <td class="align-middle"> <a href="{{route('delqty',['id'=>$row->id])}}"><i class="bi bi-trash-fill text-danger"></i></a> </td>       
               </tr>
               @endforeach
               @endif

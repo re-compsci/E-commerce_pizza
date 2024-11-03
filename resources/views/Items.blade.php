@@ -2,12 +2,16 @@
 
         @section('content')
         <div class="container overflow-hidden">
-        <h1 class="alert alert-danger text-center">{{$group->itemgroupName}}</h1>
-        <!--   <div class="row">
+        <h1 class="alert alert-light text-center">{{$group->itemgroupName}}</h1>
+        <!--  
+
+        <div class="row">
         <div class="col">
         <img src="/imgs/pizza-bg.jpeg" alt="" width="">
         </div>
-        </div>-->
+        </div>
+        
+        -->
         <div class="row row-cols-4 row-cols-md-3 g-4d-flex align-items-center justify-content-center">
         @if($data!= null)
         @foreach($data as $row)

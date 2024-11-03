@@ -60,9 +60,9 @@ class DashControl extends Controller
 
     public function delGroup($id){
       $item=Itemgroups::find($id);
+
       $item->delete();
-      Storage::disk('public')->delete($item->itemImg
-);
+      Storage::disk('public')->delete('storage/'.$item->itemImg);
       return redirect('groups');
     }
   

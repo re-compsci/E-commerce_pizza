@@ -11,7 +11,6 @@
  
     <style>
     nav{background-color:#F1E4C3;}
-  
     </style>
 
     <!-- Fonts -->
@@ -27,7 +26,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                     <a class="navbar-brand text-white font-monospace" href="{{route('welcome')}}"> <img src="/imgs/pizza.png" width="180" height="65" alt="logo"> </a>
+                     <a class="navbar-brand text-white font-monospace" href="{{route('welcome')}}"> <img src="/imgs/pizza.png" width="180" height="46" alt="logo"> </a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>

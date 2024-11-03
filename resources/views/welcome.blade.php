@@ -1,8 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+
+    #c:hover{
+      transition: transform .7s; 
+      border: 2px solid black;
+      transform: scale(1);}
+    </style>
 <div class="container">
-  <div class="row m-3">
+  <div class="row">
     <div class="col">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -25,12 +32,12 @@
     </div>
   </div>
 
-    <div class="row row-cols-2 row-cols-md-2 ms-4">
+    <div class="row ">
         @if($data!= null)
           @foreach($data as $row)
             <div class="col g-2 d-flex justify-content-evenly">
               <a href="{{route('Items',['id'=>$row->id])}}" class="">
-                <div class="card mt-3" style="width: 18rem; height: 16rem">
+                <div id="c" class="card mt-3" style="width: 18rem; height: 16rem">
                   <img src="/storage/{{$row->groupImg}}" class="card-img-top img-fluid" style="width:300px; height:250px;" alt="..."  >
                   <div class="card-body">
                     <p class="card-title">{{$row->itemgroupName}}  </p>

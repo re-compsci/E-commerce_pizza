@@ -46,7 +46,7 @@
                             <tr>
                                 <td>{{$row->id}}</td>
                                 <td> {{$row->itemgroupName}}</td>
-                                <td colspan="2"> <img src="/storage/{{$row->groupImg}}"class="rounded mx-auto d-block" alt="..." height="200" width="200" ></td>
+                                <td colspan="2"> <img src="{{Storage :: url($row->groupImg)}}"class="rounded mx-auto d-block" alt="..." height="200" width="200" ></td>
                                 <td><a href=" {{route('editg',['id'=>$row->id ]) }}"><i class="bi bi-pencil-square text-success"></i></a></td> 
                                 <td><a href=" {{route('delg',['id'=>$row->id]) }}"><i class="bi bi-trash text-danger"></i></a></td>
                             </tr>
